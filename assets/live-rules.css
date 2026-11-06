@@ -1,1 +1,16 @@
-.live-rules{color:#ffe327;font:800 27px/1.25 "Microsoft YaHei",sans-serif;margin-top:12px;text-shadow:0 1px 1px #8c6800}.live-rules .rule-row{display:flex;align-items:center;gap:10px;min-height:58px}.live-rules .rule-row img{width:48px;height:48px;object-fit:contain;flex:none}.live-rules .comment-rule{font-size:23px;flex-wrap:wrap;gap:2px 8px}.live-rules .comment-rule b{font-size:24px;margin-right:0}.live-rules .comment-rule span{font-size:21px}
+.live-rules{color:#ffe327;font:800 27px/1.25 "Microsoft YaHei",sans-serif;margin-top:12px;text-shadow:0 1px 1px #8c6800}.live-rules .rule-row{display:flex;align-items:center;gap:10px;min-height:58px}.live-rules .rule-row img{width:48px;height:48px;object-fit:contain;flex:none}.live-rules .comment-rule{font-size:23px;flex-wrap:wrap;gap:2px 8px}.live-rules .comment-rule b{font-size:24px;margin-right:0}.live-rules .comment-rule span{font-size:21px}.live-rules .follow-rule b{color:#ffd24a;text-shadow:0 0 8px #ffb30088,0 1px 1px #8c6800}
+.live-rules .collect-rule b{color:#bfe8ff;text-shadow:0 0 8px #5fc8ff88,0 1px 1px #2a5b78}
+.live-rules .energy-rule b{color:#9fe3ff;text-shadow:0 0 8px #4fc3ff88}.live-rules .x-unused b{color:#ffd9a8;text-shadow:0 0 8px #ff9a3c88,0 1px 1px #6b3a12}
+#follow-cta{position:absolute;top:46px;right:16px;z-index:5;pointer-events:none;display:flex;flex-direction:column;align-items:flex-end;gap:2px;padding:10px 16px 9px;border-radius:14px;background:linear-gradient(135deg,#3a2600e6,#6b4500e6);border:2px solid #ffd24a;box-shadow:0 0 18px #ffb30066;color:#fff;font-family:"Microsoft YaHei",sans-serif;text-align:right;animation:follow-cta-pulse 2.4s ease-in-out infinite}
+#follow-cta b{font-size:26px;line-height:1.15;color:#ffd24a;text-shadow:0 0 10px #ffb300aa}
+#follow-cta span{font-size:19px;font-weight:700}
+#follow-cta em{font-style:normal;color:#ffe58a}
+#follow-cta small{font-size:13px;color:#ffe9b8cc;margin-top:2px}
+@keyframes follow-cta-pulse{0%,100%{transform:scale(1);box-shadow:0 0 14px #ffb30055}50%{transform:scale(1.045);box-shadow:0 0 30px #ffc400aa}}
+
+.live-rules .style-rule b{color:#ffb3e6;text-shadow:0 0 8px #ff4fb888,0 1px 1px #6b1250}
+.live-rules .style-menu{min-height:0;margin:-4px 0 4px}
+.live-rules .style-menu span{font-size:20px;line-height:1.35;color:#fff3b0}
+.live-rules .keepsake-rule b{color:#ffcf7a;text-shadow:0 0 8px #ff9a3c88}
+.live-rules .keepsake-menu{min-height:0;margin:-4px 0 4px}
+.live-rules .keepsake-menu span{font-size:20px;line-height:1.35;color:#fff3b0}

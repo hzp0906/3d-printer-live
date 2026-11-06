@@ -8,6 +8,11 @@
 .bridge-room
 __pycache__/
 
+# ===== 老粉记录（含观众昵称）=====
+fan-book.json
+fan-book.json.bak
+fan-book.json.tmp
+
 # ===== 内部验收记录（含真实观众昵称与头像链接）=====
 avatar-acceptance.json
 AVATAR-ACCEPTANCE.md
@@ -16,3 +21,15 @@ TEST-REPORT.md
 # ===== 本地参考图片（不发布）=====
 storyboard.jpg
 reference.jpg
+
+# ===== 播报语音缓存（含观众昵称）=====
+.tts-cache/
+
+# ===== 短视频素材（含观众昵称与头像画面）=====
+clips/
+
+# 个人运营素材（不公开）
+docs/涨粉复盘视频方案.md
+docs/video-cards/
+docs/video-shots/
+.live-webview-profile/

@@ -62,9 +62,10 @@ function controlFrame(opcode, payload = Buffer.alloc(0)) {
   return Buffer.concat([header, payload]);
 }
 
-export function startWSServer(port, { onMessage, onStatus, onError } = {}) {
+export function startWSServer(port, { onMessage, onStatus, onError, onRequest } = {}) {
   const clients = new Set();
   const server = http.createServer((req, res) => {
+    if (onRequest) { try { if (onRequest(req, res)) return; } catch { } }
     res.writeHead(200, { 'content-type': 'text/plain; charset=utf-8' });
     res.end('avatar-printer data bridge running');
   });
@@ -107,7 +108,8 @@ export function startWSServer(port, { onMessage, onStatus, onError } = {}) {
       try { c.sock.write(data) } catch { clients.delete(c) }
     }
   }
-  server.listen(port, () => { if (onStatus) onStatus(port) });
+  // 只允许本机打印页面连接，避免向局域网暴露观众数据和切换房间能力。
+  server.listen(port, '127.0.0.1', () => { if (onStatus) onStatus(port) });
   return {
     broadcast,
     clientCount: () => clients.size,
